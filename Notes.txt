@@ -1,0 +1,12 @@
+Logic Behind Time.Delta time
+
+What happens is, when you translate an object in Update(), that translation happens in frame rate, i.e. translate(vector3.right) will make it move 1 unit per frame (60 units per second as per frame rate). Multiplying that by Time.DeltaTime actually converts that 1 unit per frame to 1 unit per second thus giving the desired outcome.
+
+1 unity unit is equivalent to 1 meter
+
+Multiplying by speed variable means translating in specified directions with speed in meters / sec -> translate(dir) * speed * Time.DeltaTime;
+
+SerializeField enaables us to view private variables in inspector
+
+WebGL Build requires color setting to be set to gama
+
